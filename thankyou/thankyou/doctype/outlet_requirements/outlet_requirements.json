@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-20 17:56:35.035888",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "territory",
+  "column_break_xoffg",
+  "warehouse",
+  "category",
+  "section_break_623rx",
+  "item_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_xoffg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_623rx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "item_details",
+   "fieldtype": "Table",
+   "label": "Item Details",
+   "options": "Thankyou Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Category",
+   "options": "Item Group",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "label": "Outlet Name",
+   "options": "Warehouse",
+   "reqd": 1
+  },
+  {
+   "default": "MDU",
+   "fieldname": "territory",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Area",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-06-06 12:02:01.705730",
+ "modified_by": "Administrator",
+ "module": "Thankyou",
+ "name": "Outlet Requirements",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

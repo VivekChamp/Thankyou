@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-20 17:58:58.430792",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "item_name",
+  "uom",
+  "item_group",
+  "date",
+  "available_qty",
+  "suggested_qty",
+  "required_qty"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Name"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "UOM"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Date"
+  },
+  {
+   "default": "0",
+   "fieldname": "available_qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Available Qty"
+  },
+  {
+   "default": "0",
+   "fieldname": "suggested_qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Suggested Qty"
+  },
+  {
+   "default": "0",
+   "fieldname": "required_qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Required Qty"
+  },
+  {
+   "fieldname": "item_group",
+   "fieldtype": "Link",
+   "label": "Item Group",
+   "options": "Item Group"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-05-21 22:29:31.501214",
+ "modified_by": "Administrator",
+ "module": "Thankyou",
+ "name": "Thankyou Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
